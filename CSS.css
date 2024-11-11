@@ -1,0 +1,22 @@
+//
+// ARRANGE AUTOMATICALLY AN ARRAY INTO TWO COLUMS (2 ITEMS PER ROW)
+//
+/* <div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+</div> */
+
+.item {
+  width: 100%
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+}
